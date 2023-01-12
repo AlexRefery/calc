@@ -14,7 +14,7 @@ public class Calculator {
         if (operands.length != 2 || operands[0].isBlank()) {
             throw new IllegalArgumentException("Должно быть только два положительных аргумента!");
         }
-        String operator = expression.replace(operands[0], "").replace(operands[1], "");
+        String operator = String.valueOf(expression.replace(operands[0], "").charAt(0));
         if (expression.length() - expression.replaceAll(OPERATION_REGEX, "").length() > 1) {
             throw new IllegalArgumentException("Операция может быть только одна!");
         }
