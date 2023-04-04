@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Calculator {
+
+
     private static final String[] romanNumeral = {"C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
     private static final int[] romanValues = {100, 90, 50, 40, 10, 9, 5, 4, 1};
     private static final String ROMAN_REGEX = "^C?(XC|XL|L?X{0,3})?(IX|IV|V?I{0,3})?$";
